@@ -1,0 +1,10 @@
+log/
+logs/
+node_modules/
+build/
+result/
+
+*.bak
+*.log
+*.pdf
+*.png
