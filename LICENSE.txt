@@ -1,0 +1,1 @@
+Ghostscript license, see https://www.ghostscript.com/license.html
