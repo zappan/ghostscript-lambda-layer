@@ -33,10 +33,10 @@ Metadata:
       Ghostscript AWS Lambda layer adding PDF files conversion support using ImageMagick.
       Bundles Ghostscript 9.27.
     Author: Tomislav Capan
-    SpdxLicenseId: GPL-2.0
+    SpdxLicenseId: MIT
     LicenseUrl: LICENSE.txt
     ReadmeUrl: README-SAR.md
     Labels: ['layer', 'pdf', 'lambda', 'ghostscript', 'gs']
     HomePageUrl: https://github.com/zappan/ghostscript-lambda-layer
-    SemanticVersion: 1.0.0
+    SemanticVersion: 9.27.0
     SourceCodeUrl: https://github.com/zappan/ghostscript-lambda-layer
