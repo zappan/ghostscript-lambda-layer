@@ -1,0 +1,42 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Ghostscript AWS Lambda layer adding PDF files conversion support using ImageMagick.
+
+  As a prerequisite, add the ImageMagick support by deploying the
+  [image-magick-lambda-layer](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:145266761615:applications~image-magick-lambda-layer)
+  Lambda layer.
+
+  Check out https://github.com/serverlesspub/imagemagick-aws-lambda-2
+  for more information.
+Resources:
+  GhostscriptLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: ghostscript
+      Description: Ghostscript AWS Lambda layer adding PDF files conversion support using ImageMagick
+      ContentUri: result/
+      CompatibleRuntimes:
+        - nodejs10.x
+      LicenseInfo: https://www.ghostscript.com/license.html
+      RetentionPolicy: Retain
+
+Outputs:
+  LayerVersion:
+    Description: Layer ARN Reference
+    Value: !Ref GhostscriptLayer
+
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: ghostscript-lambda-layer
+    Description: >
+      Ghostscript AWS Lambda layer adding PDF files conversion support using ImageMagick.
+      Bundles Ghostscript 9.27.
+    Author: Tomislav Capan
+    SpdxLicenseId: GPL-2.0
+    LicenseUrl: LICENSE.txt
+    ReadmeUrl: README-SAR.md
+    Labels: ['layer', 'pdf', 'lambda', 'ghostscript', 'gs']
+    HomePageUrl: https://github.com/zappan/ghostscript-lambda-layer
+    SemanticVersion: 1.0.0
+    SourceCodeUrl: https://github.com/zappan/ghostscript-lambda-layer
