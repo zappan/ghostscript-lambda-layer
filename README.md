@@ -8,7 +8,11 @@ such as the `nodejs10.x` runtime, and the updated 2018.03 Amazon Linux 1 runtime
 
 Absolutely the easiest way of using this is to pull it directly from the AWS Serverless
 Application repository into a CloudFormation/SAM application, or deploy directly from
-the Serverless Application Repository into your account, and then link as a layer. 
+the Serverless Application Repository into your account, and then link as a layer.
+
+For more information, check out the
+[ghostscript-lambda-layer](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:154387959412:applications~ghostscript-lambda-layer)
+application in the Serverless App Repository.
 
 For manual deployments and custom builds, read below...
 
