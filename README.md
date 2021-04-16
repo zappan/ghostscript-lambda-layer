@@ -54,7 +54,7 @@ Modify the versions of libraries or Ghostscript directly in [`Makefile_gs`](Make
 ### Compiled info
 
 ```
-ghostscript version 9.27
+ghostscript version 9.54.0
 ```
 
 
