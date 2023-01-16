@@ -1,7 +1,7 @@
 # Ghostscript Lambda Layer for Amazon Linux 2 AMIs
 
 Ghostscript AWS Lambda layer adding PDF files conversion support using ImageMagick.
-Bundles Ghostscript 9.54.0.
+Bundles Ghostscript 9.56.1.
 
 As a prerequisite, add the ImageMagick support by deploying the
 [image-magick-lambda-layer](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:145266761615:applications~image-magick-lambda-layer)
